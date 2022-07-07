@@ -4,8 +4,8 @@
       :href="href"
       :class="[
         (exactMatch && isExactActive) || (!exactMatch && isActive)
-          ? 'bg-gray-900 text-white'
-          : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+          ? 'bg-slate-900 text-white'
+          : 'text-slate-300 hover:bg-slate-700 hover:text-white',
         'group flex items-center px-3 py-2 text-sm font-normal rounded-md',
       ]"
       @click="navigate"
@@ -14,8 +14,8 @@
         :is="icon"
         :class="[
           (exactMatch && isExactActive) || (!exactMatch && isActive)
-            ? 'text-gray-300'
-            : 'text-gray-400 group-hover:text-gray-300',
+            ? 'text-slate-300'
+            : 'text-slate-400 group-hover:text-slate-300',
           'mr-3 flex-shrink-0 h-6 w-6',
         ]"
         aria-hidden="true"

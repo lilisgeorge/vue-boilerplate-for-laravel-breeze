@@ -5,7 +5,7 @@
     class="antialized transition-all"
     :class="[contentMarginClass]"
   >
-    <nav class="bg-white border-b border-gray-200">
+    <nav class="bg-white border-b border-slate-200">
       <div class="mx-auto px-2 sm:px-4 lg:px-8">
         <div class="relative flex items-center justify-between h-14">
           <!-- Search section -->

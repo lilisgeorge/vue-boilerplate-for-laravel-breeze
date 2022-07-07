@@ -30,16 +30,16 @@
           <a
             :href="item.href"
             :class="[
-              active ? 'bg-gray-100' : '',
-              'block px-4 py-2 text-sm text-gray-700',
+              active ? 'bg-slate-100' : '',
+              'block px-4 py-2 text-sm text-slate-700',
             ]"
             >{{ item.name }}</a
           >
         </MenuItem>
         <MenuItem v-slot="{ active }">
           <button
-            class="block px-4 py-2 text-sm text-gray-700 w-full text-left"
-            :class="{ 'bg-gray-100': active }"
+            class="block px-4 py-2 text-sm text-slate-700 w-full text-left"
+            :class="{ 'bg-slate-100': active }"
             @click="logout"
           >
             Logout

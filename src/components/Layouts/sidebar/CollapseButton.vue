@@ -1,5 +1,5 @@
 <template>
-  <button @click="toggleSidebar" class="hover:bg-gray-700 rounded p-2">
+  <button @click="toggleSidebar" class="hover:bg-slate-700 rounded p-2">
     <svg
       xmlns="http://www.w3.org/2000/svg"
       class="h-4 w-4 text-white transition-transform"

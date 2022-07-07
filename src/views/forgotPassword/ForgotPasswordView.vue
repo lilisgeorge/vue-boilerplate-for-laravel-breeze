@@ -2,13 +2,11 @@
   <GuestLayout>
     <main>
       <AuthCard>
-        <template #header>
-          <h2 class="text-center text-3xl font-extrabold text-gray-900">
-            Forgot Password
-          </h2>
-        </template>
+        <h2 class="text-base text-center font-medium text-slate-800 mb-10">
+          Forgot password
+        </h2>
 
-        <div class="text-sm text-gray-600">
+        <div class="text-sm text-slate-600">
           Forgot your password? No problem. Just let us know your email address
           and we will email you a password reset link that will allow you to
           choose a new one.
@@ -20,32 +18,20 @@
 
         <ValidationErrorMessages :errors="errors" class="mt-4" />
 
-        <form class="mt-4 space-y-6" @submit.prevent="submitForm">
+        <form class="mt-4" @submit.prevent="submitForm">
           <!-- Email address -->
-          <div>
-            <label for="email" class="block text-sm font-medium text-gray-700">
-              Email address
-            </label>
-            <div class="mt-1">
-              <input
-                v-model="email"
-                id="email"
-                name="email"
-                type="email"
-                autocomplete="email"
-                required
-                class="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
-              />
-            </div>
-          </div>
+          <FormKit.TextField
+            v-model="email"
+            label="Email address"
+            id="email"
+            name="email"
+            type="email"
+            autocomplete="email"
+            required
+          />
 
-          <div>
-            <button
-              type="submit"
-              class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-            >
-              Email Password Reset Link
-            </button>
+          <div class="mt-10">
+            <Ui.Button type="submit"> Email Password Reset Link </Ui.Button>
           </div>
         </form>
       </AuthCard>
@@ -64,6 +50,8 @@ import GuestLayout from "@/components/Layouts/GuestLayout.vue";
 import AuthCard from "@/components/AuthCard.vue";
 import { RouteNames } from "@/router";
 import ValidationErrorMessages from "@/components/ValidationErrorMessages.vue";
+import Ui from "@/components/Ui";
+import FormKit from "@/components/FormKit";
 
 const email = ref("");
 const errors = ref<LoginValidationErrors>({});

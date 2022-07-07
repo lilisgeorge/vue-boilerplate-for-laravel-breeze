@@ -1,6 +1,6 @@
 <template>
   <div
-    class="fixed top-0 left-0 bottom-0 bg-gray-800 transition-all flex flex-col"
+    class="fixed top-0 left-0 bottom-0 bg-slate-800 transition-all flex flex-col"
     :class="[sidebarWidthClass]"
   >
     <div class="flex items-center flex-shrink-0 p-4">

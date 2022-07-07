@@ -1,14 +1,14 @@
 <template>
   <div
-    className="min-h-screen flex flex-col sm:justify-center items-center pt-6 sm:pt-0 bg-gray-100"
+    className="min-h-screen flex flex-col sm:justify-center items-center pt-6 sm:pt-0 bg-slate-100 border-t-2 border-blue-600"
   >
-    <div class="sm:mx-auto w-full sm:max-w-md sm:px-6 lg:px-8">
+    <div class="sm:mx-auto w-full sm:max-w-lg sm:px-6 lg:px-8">
       <slot name="header" />
 
       <div
-        class="mt-6 bg-white overflow-hidden shadow ring-1 ring-black ring-opacity-5 sm:rounded-lg"
+        class="bg-white overflow-hidden shadow-md ring-1 ring-black ring-opacity-5 sm:rounded"
       >
-        <div class="px-8 py-8 sm:px-10">
+        <div class="p-8 sm:p-10">
           <slot />
         </div>
       </div>
