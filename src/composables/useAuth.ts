@@ -1,7 +1,7 @@
 import useSWRV from "swrv";
 import axios, { isAxiosError, type ValidationError } from "@/lib/axios";
 import { watchEffect } from "vue";
-import { useRouter, useRoute, type RouteLocationRaw } from "vue-router";
+import { useRouter, type RouteLocationRaw } from "vue-router";
 import type { AxiosError } from "axios";
 import { RouteNames } from "@/router";
 
