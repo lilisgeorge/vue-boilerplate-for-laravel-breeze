@@ -23,7 +23,7 @@
 
 <script setup lang="ts">
 import { computed } from "vue";
-import { XCircleIcon } from "@heroicons/vue/solid";
+import { XCircleIcon } from "@heroicons/vue/24/solid";
 
 const props = defineProps<{
   errors: Record<string, Array<string>>;

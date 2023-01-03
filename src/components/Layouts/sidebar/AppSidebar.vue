@@ -39,7 +39,7 @@
 </template>
 
 <script setup lang="ts">
-import { HomeIcon } from "@heroicons/vue/outline";
+import { HomeIcon } from "@heroicons/vue/24/outline";
 import { sidebarWidthClass, collapsed } from "./state";
 import CollapseButton from "./CollapseButton.vue";
 import SidebarLink from "./SidebarLink.vue";
