@@ -1,8 +1,6 @@
-# Vue Laravel Breeze
+# Vue boilerplate for Laravel Breeze
 
 ## Introduction
-
-This repository is an implementation of the Laravel Breeze application / authentication starter kit frontend in Vue.js. All of the authentication boilerplate is already written for you - powered by Laravel Sanctum, allowing you to quickly begin pairing your beautiful Vue.js frontend with a powerful Laravel backend.
 
 This repository is heavily inspired by [Laravel Breeze - Next.js Edition](https://github.com/laravel/breeze-next).
 
