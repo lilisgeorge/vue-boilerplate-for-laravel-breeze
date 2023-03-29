@@ -5,8 +5,6 @@ export default {
 </script>
 
 <script setup lang="ts">
-import { useSlots } from "vue";
-
 defineProps(["modelValue"]);
 const emit = defineEmits(["update:modelValue"]);
 
@@ -29,10 +27,4 @@ const handleChange = (evt: Event) => {
       <slot />
     </span>
   </label>
-  <!-- <input
-    :value="modelValue"
-    type="checkbox"
-    class="h-4 w-4 float-left text-blue-600 border-slate-300 rounded focus:ring-4 focus:ring-offset-0 focus:ring-blue-500 focus:ring-opacity-20 focus:border-blue-500 sm:text-sm transition duration-150"
-    @change="handleChange"
-  /> -->
 </template>

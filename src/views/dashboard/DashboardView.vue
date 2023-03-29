@@ -12,7 +12,7 @@
 
 <script setup lang="ts">
 import type { User } from "@/composables/useAuth";
-import { computed } from "@vue/reactivity";
+import { computed } from "vue";
 const props = defineProps<{
   user: User;
 }>();
